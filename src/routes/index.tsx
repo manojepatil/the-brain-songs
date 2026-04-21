@@ -41,6 +41,8 @@ function CTA({ label = "Get The Brain Song Now" }: { label?: string }) {
   return (
     <a
       href={BUY_URL}
+      target="_blank"
+      rel="noopener sponsored"
       className="inline-block rounded-full px-8 py-4 font-bold text-primary-foreground uppercase tracking-wide text-base sm:text-lg shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
       style={{ backgroundImage: "var(--gradient-cta)" }}
     >
