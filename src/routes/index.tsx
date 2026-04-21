@@ -441,12 +441,12 @@ function Index() {
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <img
-            src={bonusesImg}
-            alt="Free bonus ebooks included with The Brain Song"
-            width={1024}
-            height={768}
+            src={productMini}
+            alt="The Brain Song program with free bonuses"
+            width={600}
+            height={600}
             loading="lazy"
-            className="rounded-2xl shadow-[var(--shadow-card)]"
+            className="w-full max-w-md mx-auto drop-shadow-2xl"
           />
           <div>
             <SectionTitle>Brain Song Bonuses — Yours FREE Today</SectionTitle>
@@ -584,21 +584,22 @@ function Index() {
       {/* FINAL CTA */}
       <section
         id="buy"
-        className="py-20 px-4 text-center text-primary-foreground"
-        style={{ backgroundImage: "var(--gradient-cta)" }}
+        className="py-20 px-4 text-center text-secondary-foreground"
+        style={{ backgroundImage: "var(--gradient-hero)" }}
       >
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">
             Don't Wait Any Longer!
           </h2>
-          <p className="text-xl sm:text-2xl font-semibold mb-8">
+          <p className="text-xl sm:text-2xl font-semibold mb-8 text-primary">
             Join Your Discounted Brain Song Program Now
           </p>
           <a
             href={BUY_URL}
             target="_blank"
             rel="noopener sponsored"
-            className="inline-block bg-card text-primary rounded-full px-10 py-5 font-extrabold text-lg sm:text-xl uppercase tracking-wide shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
+            className="inline-block rounded-full px-10 py-5 font-extrabold text-lg sm:text-xl uppercase tracking-wide text-foreground shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
+            style={{ backgroundImage: "var(--gradient-cta)" }}
           >
             ▶ Yes! I Want The Brain Song
           </a>
