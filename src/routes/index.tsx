@@ -124,7 +124,7 @@ function Index() {
       <StickyBuyBar href={BUY_URL} />
       {/* Top bar */}
       <div className="bg-primary text-foreground text-center text-xs sm:text-sm py-2 px-4 font-bold uppercase tracking-wide">
-        🎧 Special 2026 Offer — Just $39 For Lifetime Digital Access
+        🎧 Special 2026 Offer — Just <span className="text-secondary">$39</span> For Lifetime Digital Access
       </div>
 
       {/* Logo bar */}
