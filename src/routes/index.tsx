@@ -583,6 +583,8 @@ function Index() {
           </p>
           <a
             href={BUY_URL}
+            target="_blank"
+            rel="noopener sponsored"
             className="inline-block bg-card text-primary rounded-full px-10 py-5 font-extrabold text-lg sm:text-xl uppercase tracking-wide shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
           >
             ▶ Yes! I Want The Brain Song
