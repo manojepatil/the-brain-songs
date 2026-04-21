@@ -464,7 +464,7 @@ function Index() {
           <SectionTitle>Pros and Cons of The Brain Song</SectionTitle>
           <div className="grid md:grid-cols-2 gap-6">
             <Card>
-              <h3 className="text-xl font-extrabold text-primary mb-3">✅ Pros</h3>
+              <h3 className="text-xl font-extrabold mb-3"><span style={{ color: "oklch(0.62 0.18 145)" }}>✅ Pros</span></h3>
               <ul className="space-y-2 text-foreground/80">
                 <li>• 100% natural — no pills or side effects</li>
                 <li>• Just 7 minutes a day</li>
