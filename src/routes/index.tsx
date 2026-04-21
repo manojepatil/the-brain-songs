@@ -121,43 +121,54 @@ function Index() {
   return (
     <main className="bg-background text-foreground">
       {/* Top bar */}
-      <div className="bg-secondary text-secondary-foreground text-center text-xs sm:text-sm py-2 px-4">
-        🔥 Limited 2026 Offer — Up to 70% OFF + FREE Bonuses Today Only
+      <div className="bg-primary text-foreground text-center text-xs sm:text-sm py-2 px-4 font-bold uppercase tracking-wide">
+        🔥 Limited 2026 Offer — Save up to 70% + FREE Bonuses Today Only
+      </div>
+
+      {/* Logo bar */}
+      <div className="bg-secondary py-3 px-4 flex justify-center">
+        <img
+          src={logoImg}
+          alt="The Brain Song"
+          width={220}
+          height={60}
+          className="h-10 sm:h-12 w-auto brightness-0 invert"
+        />
       </div>
 
       {/* HERO */}
       <section
-        className="px-4 pt-10 pb-16"
+        className="px-4 pt-12 pb-16 text-secondary-foreground"
         style={{ backgroundImage: "var(--gradient-hero)" }}
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div className="text-center md:text-left">
-            <span className="inline-block bg-primary/15 text-primary font-semibold px-3 py-1 rounded-full text-xs uppercase tracking-wider mb-4">
+            <span className="inline-block bg-primary text-foreground font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider mb-4">
               Official Brain Song Reviews 2026
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary leading-[1.05]">
-              The Brain Song
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.05]">
+              <span className="text-primary">The Brain Song:</span>
+              <br />
+              <span className="text-secondary-foreground">Activate Your Brainwaves For A Sharper, Healthier Mind</span>
             </h1>
-            <p className="mt-3 text-xl sm:text-2xl font-semibold text-foreground/80">
-              The 7-Minute Audio That Wakes Up Your Memory, Focus & Mental Clarity
-            </p>
-            <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-xl">
-              A simple sound ritual used by thousands of Americans to fight brain fog,
-              forgetfulness and mental fatigue — without pills, side effects or
-              complicated routines.
+            <p className="mt-5 text-lg sm:text-xl text-secondary-foreground/90 max-w-xl">
+              Where neuroscience meets sound. A simple 12-minute digital audio that
+              naturally activates healthy brainwave patterns linked with{" "}
+              <strong className="text-primary">BDNF</strong> — the key molecule that
+              supports learning, focus, and overall brain wellness.
             </p>
             <div className="mt-7 flex flex-col sm:flex-row gap-4 items-center md:items-start">
               <CTA label="Try The Brain Song Today" />
-              <span className="text-sm text-muted-foreground">⭐⭐⭐⭐⭐ 4.9 / 5 from 19,200+ users</span>
+              <span className="text-sm text-secondary-foreground/80">⭐⭐⭐⭐⭐ 4.9 / 5 from 19,200+ users</span>
             </div>
           </div>
           <div className="flex justify-center">
             <img
               src={heroImg}
-              alt="The Brain Song audio program — headphones and brain visualization"
-              width={1280}
-              height={1024}
-              className="rounded-3xl shadow-[var(--shadow-card)] w-full max-w-md"
+              alt="The Brain Song audio program"
+              width={600}
+              height={600}
+              className="w-full max-w-md drop-shadow-2xl"
             />
           </div>
         </div>
