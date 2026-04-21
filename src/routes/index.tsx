@@ -6,7 +6,7 @@ import review1 from "@/assets/review-1.jpg";
 import review2 from "@/assets/review-2.jpg";
 import review3 from "@/assets/review-3.jpg";
 
-const BUY_URL = "https://forbrainsong.com/?hopId=c5d28f78-1d24-47a5-a360-5a7bfbfd1682";
+const BUY_URL = "https://4eaf17h8vabqnwcw16smter2ch.hop.clickbank.net/";
 
 export const Route = createFileRoute("/")({
   component: Index,
