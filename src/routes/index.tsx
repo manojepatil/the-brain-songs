@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/sales/product.png";
 import productMini from "@/assets/sales/product-mini.png";
+import logoImg from "@/assets/sales/brain-song-logo.png";
 import { StickyBuyBar } from "@/components/StickyBuyBar";
 
 
@@ -127,12 +128,14 @@ function Index() {
       </div>
 
       {/* Logo bar */}
-      <div className="bg-secondary py-4 px-4 flex justify-center items-center gap-2">
-        <span className="text-2xl sm:text-3xl">🎵</span>
-        <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-          <span className="text-primary">Brain</span>
-          <span className="text-secondary-foreground"> Song</span>
-        </span>
+      <div className="bg-white py-4 px-4 flex justify-center items-center border-b border-border">
+        <img
+          src={logoImg}
+          alt="The Brain Song"
+          width={200}
+          height={80}
+          className="h-14 sm:h-16 w-auto"
+        />
       </div>
 
       {/* HERO */}
