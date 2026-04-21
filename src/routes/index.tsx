@@ -1,7 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/sales/product.png";
 import productMini from "@/assets/sales/product-mini.png";
-import logoImg from "@/assets/sales/logo.png";
 
 import guaranteeImg from "@/assets/guarantee-badge.png";
 import review1 from "@/assets/review-1.jpg";
@@ -126,14 +125,12 @@ function Index() {
       </div>
 
       {/* Logo bar */}
-      <div className="bg-secondary py-3 px-4 flex justify-center">
-        <img
-          src={logoImg}
-          alt="The Brain Song"
-          width={220}
-          height={60}
-          className="h-10 sm:h-12 w-auto brightness-0 invert"
-        />
+      <div className="bg-secondary py-4 px-4 flex justify-center items-center gap-2">
+        <span className="text-2xl sm:text-3xl">🎵</span>
+        <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <span className="text-primary">Brain</span>
+          <span className="text-secondary-foreground"> Song</span>
+        </span>
       </div>
 
       {/* HERO */}
@@ -147,15 +144,14 @@ function Index() {
               Official Brain Song Reviews 2026
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.05]">
-              <span className="text-primary">The Brain Song:</span>
+              <span className="text-primary">Press Play.</span>
               <br />
-              <span className="text-secondary-foreground">Activate Your Brainwaves For A Sharper, Healthier Mind</span>
+              <span className="text-secondary-foreground">Wake Up A Sharper, Calmer, More Focused Mind In Just Minutes A Day.</span>
             </h1>
             <p className="mt-5 text-lg sm:text-xl text-secondary-foreground/90 max-w-xl">
-              Where neuroscience meets sound. A simple 12-minute digital audio that
-              naturally activates healthy brainwave patterns linked with{" "}
-              <strong className="text-primary">BDNF</strong> — the key molecule that
-              supports learning, focus, and overall brain wellness.
+              Discover the gentle audio ritual thousands of Americans are using to fight
+              brain fog, recover lost focus and protect long-term memory — no pills, no
+              gadgets, just headphones and a few quiet minutes a day.
             </p>
             <div className="mt-7 flex flex-col sm:flex-row gap-4 items-center md:items-start">
               <CTA label="Try The Brain Song Today" />
@@ -609,11 +605,17 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="bg-secondary text-secondary-foreground/80 py-10 px-4 text-center text-sm">
-        <p className="max-w-3xl mx-auto mb-3">
+        <p className="max-w-3xl mx-auto mb-4">
           Disclaimer: The Brain Song is an audio wellness program and is not intended
           to diagnose, treat, cure or prevent any disease. Results may vary. Always
-          consult your physician before starting any new wellness routine.
+          consult your physician before starting any new wellness routine. This site is
+          an independent affiliate review and may earn a commission from purchases.
         </p>
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4 font-semibold">
+          <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>
+          <Link to="/terms" className="text-primary hover:underline">Terms and Conditions</Link>
+          <Link to="/disclaimer" className="text-primary hover:underline">Disclaimers</Link>
+        </nav>
         <p>© {new Date().getFullYear()} The Brain Song Reviews. All rights reserved.</p>
       </footer>
     </main>

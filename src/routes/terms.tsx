@@ -36,7 +36,7 @@ function TermsPage() {
         <h2 className="text-2xl font-bold text-secondary mt-8 mb-3">4. No Professional Advice</h2>
         <p>Information on this site is not a substitute for professional medical, legal, financial, or psychological advice. Always consult a qualified professional before making decisions related to your health or wellbeing.</p>
 
-        <h2 className="text-2xl function-bold text-secondary mt-8 mb-3">5. Product Purchases</h2>
+        <h2 className="text-2xl font-bold text-secondary mt-8 mb-3">5. Product Purchases</h2>
         <p>All purchases of "The Brain Song" are made directly with the official vendor through their secure checkout, not through this website. The vendor's terms, refund policy, and money-back guarantee apply to your purchase.</p>
 
         <h2 className="text-2xl font-bold text-secondary mt-8 mb-3">6. Limitation of Liability</h2>
