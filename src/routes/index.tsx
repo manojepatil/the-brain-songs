@@ -187,7 +187,7 @@ function Index() {
       </section>
 
       {/* REVIEWS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-6xl mx-auto">
           <SectionTitle>Real Brain Song Reviews From Real Customers</SectionTitle>
           <div className="grid md:grid-cols-3 gap-6">
@@ -302,7 +302,7 @@ function Index() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-4xl mx-auto">
           <SectionTitle>How Does The Brain Song Work?</SectionTitle>
           <ul className="space-y-4 text-lg">
@@ -406,7 +406,7 @@ function Index() {
       </section>
 
       {/* BENEFITS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-5xl mx-auto">
           <SectionTitle>Top Benefits of The Brain Song</SectionTitle>
           <p className="text-center text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -452,7 +452,7 @@ function Index() {
       </section>
 
       {/* PROS & CONS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-5xl mx-auto">
           <SectionTitle>Pros and Cons of The Brain Song</SectionTitle>
           <div className="grid md:grid-cols-2 gap-6">
@@ -506,7 +506,7 @@ function Index() {
       </section>
 
       {/* HOW TO USE */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-3xl mx-auto">
           <SectionTitle>How to Use The Brain Song</SectionTitle>
           <ol className="space-y-3 text-lg list-decimal pl-6">
@@ -539,7 +539,7 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-3xl mx-auto">
           <SectionTitle>Frequently Asked Questions</SectionTitle>
           <div className="space-y-4">
