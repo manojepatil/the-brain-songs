@@ -6,7 +6,7 @@ import review1 from "@/assets/review-1.jpg";
 import review2 from "@/assets/review-2.jpg";
 import review3 from "@/assets/review-3.jpg";
 
-const BUY_URL = "#buy";
+const BUY_URL = "https://forbrainsong.com/?hopId=c5d28f78-1d24-47a5-a360-5a7bfbfd1682";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -41,6 +41,8 @@ function CTA({ label = "Get The Brain Song Now" }: { label?: string }) {
   return (
     <a
       href={BUY_URL}
+      target="_blank"
+      rel="noopener sponsored"
       className="inline-block rounded-full px-8 py-4 font-bold text-primary-foreground uppercase tracking-wide text-base sm:text-lg shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
       style={{ backgroundImage: "var(--gradient-cta)" }}
     >
@@ -581,6 +583,8 @@ function Index() {
           </p>
           <a
             href={BUY_URL}
+            target="_blank"
+            rel="noopener sponsored"
             className="inline-block bg-card text-primary rounded-full px-10 py-5 font-extrabold text-lg sm:text-xl uppercase tracking-wide shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
           >
             ▶ Yes! I Want The Brain Song
