@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/sales/product.png";
 import productMini from "@/assets/sales/product-mini.png";
+import { StickyBuyBar } from "@/components/StickyBuyBar";
 
 
 import review1 from "@/assets/review-1.jpg";
@@ -118,7 +119,8 @@ function Index() {
   ];
 
   return (
-    <main className="bg-background text-foreground">
+    <main className="bg-background text-foreground pb-20 sm:pb-24">
+      <StickyBuyBar href={BUY_URL} />
       {/* Top bar */}
       <div className="bg-primary text-foreground text-center text-xs sm:text-sm py-2 px-4 font-bold uppercase tracking-wide">
         🎧 Special 2026 Offer — Just $39 For Lifetime Digital Access
