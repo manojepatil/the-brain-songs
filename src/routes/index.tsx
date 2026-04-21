@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "The Brain Song reviews: a 7-minute brain-boosting audio program for memory, focus and mental clarity. Read benefits, ingredients of the audio, pricing, bonuses and 60-day guarantee.",
+          "The Brain Song reviews: a 12-minute brain-boosting audio program for memory, focus and mental clarity. Read benefits, ingredients of the audio, pricing, bonuses and 60-day guarantee.",
       },
       {
         name: "keywords",
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Honest Brain Song review — how the 7-minute audio works, who it's for, real customer reviews, bonuses & 60-day guarantee.",
+          "Honest Brain Song review — how the 12-minute audio works, who it's for, real customer reviews, bonuses & 60-day guarantee.",
       },
       { property: "og:image", content: heroImg },
       { property: "og:type", content: "website" },
@@ -82,7 +82,7 @@ function Index() {
       city: "Cleveland, OH",
       img: review2,
       text:
-        "Honestly I thought it was just relaxing music. But within a month my focus at work was sharper, I stopped losing my keys, and my wife says I'm in a better mood. Seven minutes a day — that's it. Wish I had this ten years ago.",
+        "Honestly I thought it was just relaxing music. But within a month my focus at work was sharper, I stopped losing my keys, and my wife says I'm in a better mood. Twelve minutes a day — that's it. Wish I had this ten years ago.",
     },
     {
       name: "Ashley Carter",
@@ -105,7 +105,7 @@ function Index() {
   ];
 
   const faqs = [
-    ["Is The Brain Song really just an audio?", "Yes. It's a 7-minute sound track you listen to once a day with headphones. No pills, no gadgets, no side effects."],
+    ["Is The Brain Song really just an audio?", "Yes. It's a 12-minute sound track you listen to once a day with headphones. No pills, no gadgets, no side effects."],
     ["How fast will I see results?", "Most users report feeling calmer and clearer within the first 7 days. For lasting memory and focus benefits, listen daily for 30–60 days."],
     ["Is The Brain Song safe?", "It's 100% natural sound — no chemicals, no drugs. It's safe for adults of any age and won't interact with medications."],
     ["Do I need special headphones?", "Any headphones or earbuds work. Headphones give the best stereo effect, but a phone speaker still works in a pinch."],
@@ -173,9 +173,9 @@ function Index() {
       {/* INTRO / PROMISE */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto space-y-5 text-lg leading-relaxed">
-          <SectionTitle>A Simple 7-Minute Song That's Changing How America Remembers</SectionTitle>
+          <SectionTitle>A Simple 12-Minute Song That's Changing How America Remembers</SectionTitle>
           <p>
-            Imagine pressing play, closing your eyes for seven minutes, and feeling your
+            Imagine pressing play, closing your eyes for twelve minutes, and feeling your
             mind switch back on — like flipping a light bulb you forgot was off. That's
             the promise behind The Brain Song, and that's why people from every state are
             talking about it.
@@ -183,7 +183,7 @@ function Index() {
           <p>
             The Brain Song is a brand-new audio program designed to support memory,
             focus and mental clarity using carefully layered sound frequencies. No pills.
-            No powders. Just headphones and seven minutes of your day.
+            No powders. Just headphones and twelve minutes of your day.
           </p>
           <p>
             If you've ever walked into a room and forgotten why, lost your train of
@@ -227,7 +227,7 @@ function Index() {
         <div className="max-w-3xl mx-auto space-y-5 text-lg leading-relaxed">
           <SectionTitle>What Is The Brain Song?</SectionTitle>
           <p>
-            The Brain Song is a 7-minute audio program built around layered sound
+            The Brain Song is a 12-minute audio program built around layered sound
             frequencies, gentle nature tones and rhythmic beats that gently nudge your
             brain back into a focused, alert state. Think of it like a tune-up for the
             mind you can do while sipping morning coffee.
@@ -264,7 +264,7 @@ function Index() {
           </p>
           <ul className="space-y-3 text-lg max-w-2xl mx-auto">
             {[
-              "The original 7-Minute Brain Song master audio track",
+              "The original 12-Minute Brain Song master audio track",
               "Morning Focus boost session (5 minutes)",
               "Deep Sleep Brain Song nighttime session",
               "Memory Recall mini-track for instant clarity",
@@ -301,7 +301,7 @@ function Index() {
             not just relaxing — you're actively training your mind in the background.
           </p>
           <p>
-            And it's stupidly simple. Seven minutes, one set of headphones, no apps to
+            And it's stupidly simple. Twelve minutes, one set of headphones, no apps to
             learn, no equipment to buy. That's why so many honest Brain Song reviews say
             it's the only routine they've ever managed to keep up daily.
           </p>
@@ -315,7 +315,7 @@ function Index() {
           <ul className="space-y-4 text-lg">
             {[
               "You put on any pair of headphones or earbuds.",
-              "You press play on the 7-minute Brain Song track.",
+              "You press play on the 12-minute Brain Song track.",
               "Layered sound frequencies start gently syncing with your brainwaves.",
               "Your nervous system relaxes, and stress chemicals begin to drop.",
               "The brain shifts into a focused, alert state similar to deep meditation.",
@@ -392,7 +392,7 @@ function Index() {
             <p className="text-foreground/80 leading-relaxed">
               The Brain Song helps by giving your overworked, overstimulated brain a
               daily reset. Modern life floods us with screens, noise and stress — this
-              7-minute ritual quiets the noise, restores focus, and supports the
+              12-minute ritual quiets the noise, restores focus, and supports the
               memory pathways that suffer most with age and burnout. Used daily, many
               users report feeling sharper, calmer and more like themselves again.
             </p>
@@ -467,7 +467,7 @@ function Index() {
               <h3 className="text-xl font-extrabold mb-3"><span style={{ color: "oklch(0.62 0.18 145)" }}>✅ Pros</span></h3>
               <ul className="space-y-2 text-foreground/80">
                 <li>• 100% natural — no pills or side effects</li>
-                <li>• Just 7 minutes a day</li>
+                <li>• Just 12 minutes a day</li>
                 <li>• Instant digital access after purchase</li>
                 <li>• Works on any phone or headphones</li>
                 <li>• Backed by a 60-day money-back guarantee</li>
@@ -518,7 +518,7 @@ function Index() {
           <SectionTitle>How to Use The Brain Song</SectionTitle>
           <ol className="space-y-3 text-lg list-decimal pl-6">
             <li>Find a quiet spot and put on your headphones.</li>
-            <li>Open the member's area and press play on the 7-minute track.</li>
+            <li>Open the member's area and press play on the 12-minute track.</li>
             <li>Close your eyes, breathe slowly and let the audio do the work.</li>
             <li>Repeat once a day — morning is best — for at least 30 days.</li>
             <li>Add the bonus tracks (focus, sleep, stress) whenever you need a boost.</li>
