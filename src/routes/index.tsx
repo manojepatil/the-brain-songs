@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/sales/product.png";
 import productMini from "@/assets/sales/product-mini.png";
 
-import guaranteeImg from "@/assets/guarantee-badge.png";
+
 import review1 from "@/assets/review-1.jpg";
 import review2 from "@/assets/review-2.jpg";
 import review3 from "@/assets/review-3.jpg";
@@ -607,7 +607,7 @@ function Index() {
           >
             ▶ Yes! I Want The Brain Song
           </a>
-          <p className="mt-6 opacity-90">60-Day Money Back Guarantee · Instant Digital Access · Free Bonuses Included</p>
+          <p className="mt-6 opacity-90">One-Time $39 Payment · Instant Digital Access · Lifetime Listening</p>
         </div>
       </section>
 
