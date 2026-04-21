@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/brain-song-hero.jpg";
+import heroImg from "@/assets/sales/product.png";
+import productMini from "@/assets/sales/product-mini.png";
+import logoImg from "@/assets/sales/logo.png";
 import bonusesImg from "@/assets/brain-song-bonuses.jpg";
 import guaranteeImg from "@/assets/guarantee-badge.png";
 import review1 from "@/assets/review-1.jpg";
