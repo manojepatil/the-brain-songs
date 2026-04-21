@@ -495,8 +495,8 @@ function Index() {
           <p className="uppercase tracking-widest text-sm text-secondary font-bold mb-2">
             Today's Special Price
           </p>
-          <h2 className="text-5xl sm:text-6xl font-extrabold text-secondary mb-2">
-            Just <span className="text-primary">$39</span>
+          <h2 className="text-5xl sm:text-6xl font-extrabold text-foreground mb-2">
+            Just <span className="text-secondary">$39</span>
           </h2>
           <p className="text-lg text-foreground/80 mb-6">
             One-time payment · Instant digital delivery · Lifetime access
