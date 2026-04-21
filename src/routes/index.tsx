@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/brain-song-hero.jpg";
-import bonusesImg from "@/assets/brain-song-bonuses.jpg";
+import heroImg from "@/assets/sales/product.png";
+import productMini from "@/assets/sales/product-mini.png";
+import logoImg from "@/assets/sales/logo.png";
+
 import guaranteeImg from "@/assets/guarantee-badge.png";
 import review1 from "@/assets/review-1.jpg";
 import review2 from "@/assets/review-2.jpg";
@@ -119,43 +121,54 @@ function Index() {
   return (
     <main className="bg-background text-foreground">
       {/* Top bar */}
-      <div className="bg-secondary text-secondary-foreground text-center text-xs sm:text-sm py-2 px-4">
-        🔥 Limited 2026 Offer — Up to 70% OFF + FREE Bonuses Today Only
+      <div className="bg-primary text-foreground text-center text-xs sm:text-sm py-2 px-4 font-bold uppercase tracking-wide">
+        🔥 Limited 2026 Offer — Save up to 70% + FREE Bonuses Today Only
+      </div>
+
+      {/* Logo bar */}
+      <div className="bg-secondary py-3 px-4 flex justify-center">
+        <img
+          src={logoImg}
+          alt="The Brain Song"
+          width={220}
+          height={60}
+          className="h-10 sm:h-12 w-auto brightness-0 invert"
+        />
       </div>
 
       {/* HERO */}
       <section
-        className="px-4 pt-10 pb-16"
+        className="px-4 pt-12 pb-16 text-secondary-foreground"
         style={{ backgroundImage: "var(--gradient-hero)" }}
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div className="text-center md:text-left">
-            <span className="inline-block bg-primary/15 text-primary font-semibold px-3 py-1 rounded-full text-xs uppercase tracking-wider mb-4">
+            <span className="inline-block bg-primary text-foreground font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider mb-4">
               Official Brain Song Reviews 2026
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary leading-[1.05]">
-              The Brain Song
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.05]">
+              <span className="text-primary">The Brain Song:</span>
+              <br />
+              <span className="text-secondary-foreground">Activate Your Brainwaves For A Sharper, Healthier Mind</span>
             </h1>
-            <p className="mt-3 text-xl sm:text-2xl font-semibold text-foreground/80">
-              The 7-Minute Audio That Wakes Up Your Memory, Focus & Mental Clarity
-            </p>
-            <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-xl">
-              A simple sound ritual used by thousands of Americans to fight brain fog,
-              forgetfulness and mental fatigue — without pills, side effects or
-              complicated routines.
+            <p className="mt-5 text-lg sm:text-xl text-secondary-foreground/90 max-w-xl">
+              Where neuroscience meets sound. A simple 12-minute digital audio that
+              naturally activates healthy brainwave patterns linked with{" "}
+              <strong className="text-primary">BDNF</strong> — the key molecule that
+              supports learning, focus, and overall brain wellness.
             </p>
             <div className="mt-7 flex flex-col sm:flex-row gap-4 items-center md:items-start">
               <CTA label="Try The Brain Song Today" />
-              <span className="text-sm text-muted-foreground">⭐⭐⭐⭐⭐ 4.9 / 5 from 19,200+ users</span>
+              <span className="text-sm text-secondary-foreground/80">⭐⭐⭐⭐⭐ 4.9 / 5 from 19,200+ users</span>
             </div>
           </div>
           <div className="flex justify-center">
             <img
               src={heroImg}
-              alt="The Brain Song audio program — headphones and brain visualization"
-              width={1280}
-              height={1024}
-              className="rounded-3xl shadow-[var(--shadow-card)] w-full max-w-md"
+              alt="The Brain Song audio program"
+              width={600}
+              height={600}
+              className="w-full max-w-md drop-shadow-2xl"
             />
           </div>
         </div>
@@ -185,7 +198,7 @@ function Index() {
       </section>
 
       {/* REVIEWS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-6xl mx-auto">
           <SectionTitle>Real Brain Song Reviews From Real Customers</SectionTitle>
           <div className="grid md:grid-cols-3 gap-6">
@@ -300,7 +313,7 @@ function Index() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-4xl mx-auto">
           <SectionTitle>How Does The Brain Song Work?</SectionTitle>
           <ul className="space-y-4 text-lg">
@@ -404,7 +417,7 @@ function Index() {
       </section>
 
       {/* BENEFITS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-5xl mx-auto">
           <SectionTitle>Top Benefits of The Brain Song</SectionTitle>
           <p className="text-center text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -428,12 +441,12 @@ function Index() {
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <img
-            src={bonusesImg}
-            alt="Free bonus ebooks included with The Brain Song"
-            width={1024}
-            height={768}
+            src={productMini}
+            alt="The Brain Song program with free bonuses"
+            width={600}
+            height={600}
             loading="lazy"
-            className="rounded-2xl shadow-[var(--shadow-card)]"
+            className="w-full max-w-md mx-auto drop-shadow-2xl"
           />
           <div>
             <SectionTitle>Brain Song Bonuses — Yours FREE Today</SectionTitle>
@@ -450,7 +463,7 @@ function Index() {
       </section>
 
       {/* PROS & CONS */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-5xl mx-auto">
           <SectionTitle>Pros and Cons of The Brain Song</SectionTitle>
           <div className="grid md:grid-cols-2 gap-6">
@@ -504,7 +517,7 @@ function Index() {
       </section>
 
       {/* HOW TO USE */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-3xl mx-auto">
           <SectionTitle>How to Use The Brain Song</SectionTitle>
           <ol className="space-y-3 text-lg list-decimal pl-6">
@@ -537,7 +550,7 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 px-4 bg-[oklch(0.96_0.03_85)]">
+      <section className="py-16 px-4 bg-[oklch(0.96_0.025_250)]">
         <div className="max-w-3xl mx-auto">
           <SectionTitle>Frequently Asked Questions</SectionTitle>
           <div className="space-y-4">
@@ -571,21 +584,22 @@ function Index() {
       {/* FINAL CTA */}
       <section
         id="buy"
-        className="py-20 px-4 text-center text-primary-foreground"
-        style={{ backgroundImage: "var(--gradient-cta)" }}
+        className="py-20 px-4 text-center text-secondary-foreground"
+        style={{ backgroundImage: "var(--gradient-hero)" }}
       >
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">
             Don't Wait Any Longer!
           </h2>
-          <p className="text-xl sm:text-2xl font-semibold mb-8">
+          <p className="text-xl sm:text-2xl font-semibold mb-8 text-primary">
             Join Your Discounted Brain Song Program Now
           </p>
           <a
             href={BUY_URL}
             target="_blank"
             rel="noopener sponsored"
-            className="inline-block bg-card text-primary rounded-full px-10 py-5 font-extrabold text-lg sm:text-xl uppercase tracking-wide shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
+            className="inline-block rounded-full px-10 py-5 font-extrabold text-lg sm:text-xl uppercase tracking-wide text-foreground shadow-[var(--shadow-cta)] hover:scale-[1.02] transition-transform"
+            style={{ backgroundImage: "var(--gradient-cta)" }}
           >
             ▶ Yes! I Want The Brain Song
           </a>
