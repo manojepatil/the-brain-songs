@@ -17,18 +17,18 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "The Brain Song reviews: a 12-minute brain-boosting audio program for memory, focus and mental clarity. Read benefits, ingredients of the audio, pricing, bonuses and 60-day guarantee.",
+          "The Brain Song reviews: a 12-minute brain-boosting audio program that activates Gamma brainwaves and supports BDNF for memory, focus and mental clarity. See benefits, pricing and how it works.",
       },
       {
         name: "keywords",
         content:
-          "the brain song, the brain song reviews, brain song audio program, memory loss support, brain health audio, focus and concentration, brain song complaints, brain song scam or legit, the brain song buy, brain song bonuses",
+          "the brain song, the brain song reviews, brain song audio program, BDNF, gamma brainwaves, memory support, brain health audio, focus and concentration, brain song scam or legit, the brain song buy",
       },
       { property: "og:title", content: "The Brain Song Reviews 2026 — Memory & Focus Audio Program" },
       {
         property: "og:description",
         content:
-          "Honest Brain Song review — how the 12-minute audio works, who it's for, real customer reviews, bonuses & 60-day guarantee.",
+          "Honest Brain Song review — how the 12-minute Gamma-wave audio works, who it's for, and real customer reviews.",
       },
       { property: "og:image", content: heroImg },
       { property: "og:type", content: "website" },
@@ -89,7 +89,7 @@ function Index() {
       city: "Sarasota, FL",
       img: review3,
       text:
-        "Brain fog from menopause was wrecking me. The Brain Song is the first thing that actually helped — I feel awake, motivated and present with my kids again. The bonuses alone are worth the price.",
+        "Brain fog from menopause was wrecking me. The Brain Song is the first thing that actually helped — I feel awake, motivated and present with my kids again. Twelve minutes a day is all it takes.",
     },
   ];
 
@@ -112,7 +112,7 @@ function Index() {
     ["Can I listen more than once a day?", "Yes. Many users listen morning and night. There's no risk of overdoing it."],
     ["Will it work for someone over 65?", "Absolutely. In fact, older adults often notice the biggest improvements in memory and clarity."],
     ["Is this a subscription?", "No. It's a one-time payment for lifetime access. No hidden charges, no auto-bill."],
-    ["What if it doesn't work for me?", "You're protected by a 60-day, 100% money-back guarantee. Just email support and you'll get a full refund — no questions asked."],
+    ["What if it doesn't work for me?", "The official Brain Song program is sold risk-free through ClickBank's secure checkout. Refund terms are handled directly by the vendor on their order page."],
     ["How do I get the program after buying?", "Instantly. After checkout you'll get an email with download links and login details for the member's area."],
     ["Where is The Brain Song available?", "Only on the official website through the secure order button on this page. It's not sold on Amazon, Walmart or in stores."],
   ];
@@ -121,7 +121,7 @@ function Index() {
     <main className="bg-background text-foreground">
       {/* Top bar */}
       <div className="bg-primary text-foreground text-center text-xs sm:text-sm py-2 px-4 font-bold uppercase tracking-wide">
-        🔥 Limited 2026 Offer — Save up to 70% + FREE Bonuses Today Only
+        🎧 Special 2026 Offer — Just $39 For Lifetime Digital Access
       </div>
 
       {/* Logo bar */}
@@ -259,19 +259,18 @@ function Index() {
             What Do You Get Inside The Brain Song?
           </h2>
           <p className="text-center text-lg mb-8 opacity-90">
-            When you order today, you unlock the complete Brain Song experience plus
-            free bonus material:
+            When you order today, you unlock the complete Brain Song digital experience:
           </p>
           <ul className="space-y-3 text-lg max-w-2xl mx-auto">
             {[
               "The original 12-Minute Brain Song master audio track",
-              "Morning Focus boost session (5 minutes)",
-              "Deep Sleep Brain Song nighttime session",
-              "Memory Recall mini-track for instant clarity",
-              "Stress-Melt Brain Song for calm in seconds",
+              "Neuroscience-inspired Gamma brainwave sound patterns",
+              "Instant digital download — listen on any device",
               "Step-by-step Quick Start listening guide",
-              "Lifetime access to the private member's area",
-              "Free updates whenever new tracks are released",
+              "Lifetime access — pay once, listen forever",
+              "Works in the comfort of your own home",
+              "No pills, no equipment, no subscriptions",
+              "Designed for adults of any age",
             ].map((item) => (
               <li key={item} className="flex gap-3">
                 <span className="text-primary text-xl">✓</span>
@@ -433,27 +432,25 @@ function Index() {
         </div>
       </section>
 
-      {/* BONUSES */}
+      {/* SCIENCE: BDNF + GAMMA — replaces fake bonuses */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <img
             src={productMini}
-            alt="The Brain Song program with free bonuses"
+            alt="The Brain Song — Gamma brainwave audio"
             width={600}
             height={600}
             loading="lazy"
             className="w-full max-w-md mx-auto drop-shadow-2xl"
           />
           <div>
-            <SectionTitle>Brain Song Bonuses — Yours FREE Today</SectionTitle>
+            <SectionTitle>BDNF + Gamma Brainwaves: The Real Science</SectionTitle>
             <ul className="space-y-3 text-lg">
-              <li>🎁 <b>Bonus #1:</b> Memory Mastery Handbook ($49 value)</li>
-              <li>🎁 <b>Bonus #2:</b> 7-Day Brain Reset Plan ($39 value)</li>
-              <li>🎁 <b>Bonus #3:</b> Sleep Like A Genius Audio Pack ($59 value)</li>
+              <li>🧠 <b>BDNF</b> (Brain-Derived Neurotrophic Factor) is called the brain's "fertilizer" — it supports healthy communication between brain cells.</li>
+              <li>⚡ Recent research suggests <b>Gamma brainwaves</b> may play a role in encouraging BDNF activity.</li>
+              <li>🎧 The Brain Song uses advanced sound patterns to gently guide your brain toward Gamma frequencies — safely and naturally.</li>
+              <li>⏱️ Just <b>12 minutes a day</b> from the comfort of your home — no pills, no devices, no side effects.</li>
             </ul>
-            <p className="mt-4 text-muted-foreground">
-              All three bonuses are added to your member's area instantly — no extra cost.
-            </p>
           </div>
         </div>
       </section>
@@ -466,12 +463,12 @@ function Index() {
             <Card>
               <h3 className="text-xl font-extrabold mb-3"><span style={{ color: "oklch(0.62 0.18 145)" }}>✅ Pros</span></h3>
               <ul className="space-y-2 text-foreground/80">
-                <li>• 100% natural — no pills or side effects</li>
+                <li>• 100% natural — no pills, no side effects</li>
                 <li>• Just 12 minutes a day</li>
                 <li>• Instant digital access after purchase</li>
-                <li>• Works on any phone or headphones</li>
-                <li>• Backed by a 60-day money-back guarantee</li>
-                <li>• Includes free bonuses worth $147</li>
+                <li>• Works on any phone, headphones or speaker</li>
+                <li>• One-time payment of $39 — lifetime access</li>
+                <li>• Inspired by real BDNF + Gamma brainwave research</li>
               </ul>
             </Card>
             <Card>
@@ -487,28 +484,39 @@ function Index() {
         </div>
       </section>
 
-      {/* GUARANTEE */}
+      {/* PRICING — replaces fake guarantee */}
       <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto grid md:grid-cols-[auto_1fr] gap-8 items-center">
-          <img
-            src={guaranteeImg}
-            alt="60 day money back guarantee"
-            width={768}
-            height={768}
-            loading="lazy"
-            className="w-48 mx-auto"
-          />
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary mb-4">
-              100% 60-Day Triple Money-Back Guarantee
-            </h2>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              Try The Brain Song risk-free for a full 60 days. If you don't feel
-              sharper, calmer and more focused — or for any reason at all — just send
-              one email and you'll get every penny back. No questions, no hassle,
-              no awkward forms. That's how confident we are.
-            </p>
+        <div className="max-w-3xl mx-auto text-center bg-card rounded-3xl p-10 shadow-[var(--shadow-card)] border border-border/60">
+          <p className="uppercase tracking-widest text-sm text-secondary font-bold mb-2">
+            Today's Special Price
+          </p>
+          <h2 className="text-5xl sm:text-6xl font-extrabold text-secondary mb-2">
+            Just <span className="text-primary">$39</span>
+          </h2>
+          <p className="text-lg text-foreground/80 mb-6">
+            One-time payment · Instant digital delivery · Lifetime access
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4 mb-8 text-sm">
+            <div className="bg-[oklch(0.96_0.025_250)] rounded-xl p-4">
+              <div className="text-2xl mb-1">🔒</div>
+              <div className="font-bold text-secondary">Secure Checkout</div>
+              <div className="text-muted-foreground">256-bit ClickBank checkout</div>
+            </div>
+            <div className="bg-[oklch(0.96_0.025_250)] rounded-xl p-4">
+              <div className="text-2xl mb-1">⚡</div>
+              <div className="font-bold text-secondary">Instant Access</div>
+              <div className="text-muted-foreground">Listen within 60 seconds</div>
+            </div>
+            <div className="bg-[oklch(0.96_0.025_250)] rounded-xl p-4">
+              <div className="text-2xl mb-1">📱</div>
+              <div className="font-bold text-secondary">Any Device</div>
+              <div className="text-muted-foreground">Phone, laptop, speaker</div>
+            </div>
           </div>
+          <CTA label="Get Instant Access — $39" />
+          <p className="text-xs text-muted-foreground mt-4">
+            Secure payment processed by ClickBank. Refund terms are handled by the official vendor at checkout.
+          </p>
         </div>
       </section>
 
@@ -521,7 +529,7 @@ function Index() {
             <li>Open the member's area and press play on the 12-minute track.</li>
             <li>Close your eyes, breathe slowly and let the audio do the work.</li>
             <li>Repeat once a day — morning is best — for at least 30 days.</li>
-            <li>Add the bonus tracks (focus, sleep, stress) whenever you need a boost.</li>
+            <li>Stay consistent — daily listening is what trains the brain over time.</li>
           </ol>
         </div>
       </section>
