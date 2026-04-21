@@ -616,7 +616,7 @@ function Index() {
           <Link to="/terms" className="text-primary hover:underline">Terms and Conditions</Link>
           <Link to="/disclaimer" className="text-primary hover:underline">Disclaimers</Link>
         </nav>
-        <p>© {new Date().getFullYear()} The Brain Song Reviews. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} The Brain Song. All rights reserved.</p>
       </footer>
     </main>
   );
