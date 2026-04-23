@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProstaVive - Natural Prostate Health Support Supplement</title>
+    <meta name="description" content="Reclaim your prostate health with ProstaVive. Natural support for urinary health, prostate function, and overall vitality. Clinically studied ingredients for men's health.">
+    <meta name="keywords" content="ProstaVive, prostate health, urinary health, men's supplement, prostate support, natural prostate, vitality supplement">
+    <meta property="og:title" content="ProstaVive - Natural Prostate Health Support">
+    <meta property="og:description" content="Discover ProstaVive, the natural supplement for prostate health and urinary function. Clinically studied ingredients for men's vitality.">
+    <meta property="og:image" content="https://prostavive.org/home-assets/images/bottles.png?">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://prostavive.org/home-assets/images/bottles.png?">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #1e293b;
+            background-color: #ffffff;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 2rem; }
+        p { margin-bottom: 1.5rem; }
+        a { color: #dc2626; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+            transition: transform 0.3s;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1e40af;
+        }
+        .how-it-works {
+            background-color: #f8fafc;
+        }
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+        .step {
+            flex: 1 1 300px;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .step h3 {
+            color: #dc2626;
+            margin-bottom: 15px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #1e40af;
+            color: white;
+        }
+        .ingredients {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .ingredient {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .ingredient h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .faq {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+        .faq-item h4 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            display: none;
+        }
+        .faq-item.active p {
+            display: block;
+        }
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .testimonial .stars {
+            color: #fbbf24;
+            margin-bottom: 15px;
+        }
+        .safety {
+            background-color: #f8fafc;
+            text-align: center;
+        }
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .badge {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1e40af;
+            color: white;
+            padding: 15px;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+        }
+        .sticky-bar.show {
+            display: flex;
+        }
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #60a5fa;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .steps { flex-direction: column; }
+            .badges { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Reclaim Your Prostate Health Naturally with ProstaVive</h1>
+            <p>Experience improved urinary flow, reduced nighttime discomfort, and enhanced vitality with our clinically studied formula designed for men over 40.</p>
+            <a href="https://145b3eqlvae-e21duiy6539zfk.hop.clickbank.net" class="cta-button" target="_blank" rel="noopener sponsored">Get ProstaVive Today</a>
+            <div style="margin-top: 40px; display: flex; justify-content: center;">
+                <img src="https://prostavive.org/home-assets/images/bottles.png?" alt="ProstaVive supplement bottles" loading="lazy" style="max-width: 420px; width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);" />
+            </div>
+        </div>
+    </header>
+
+    <section class="section how-it-works">
+        <div class="container">
+            <h2>How ProstaVive Works: The Science Behind Natural Prostate Support</h2>
+            <p>ProstaVive is formulated with a synergistic blend of clinically studied ingredients that work together to support prostate health and urinary function. Our approach is rooted in decades of research on natural compounds that promote healthy prostate function without the side effects of prescription medications.</p>
+            <p>The key to ProstaVive's effectiveness lies in its multi-targeted formula. Rather than addressing just one aspect of prostate health, it provides comprehensive support through multiple pathways. This includes supporting healthy hormone balance, reducing inflammation, and promoting normal urinary flow.</p>
+            <p>Clinical studies have shown that the ingredients in ProstaVive can help maintain prostate health as men age. For instance, research published in the Journal of Urology demonstrated that certain plant extracts can support prostate function and urinary health. Our formula combines these evidence-based ingredients in optimal ratios for maximum benefit.</p>
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1: Hormone Balance Support</h3>
+                    <p>ProstaVive contains ingredients that help maintain healthy testosterone levels and support the prostate's response to hormonal changes that occur with aging.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2: Inflammation Reduction</h3>
+                    <p>Chronic inflammation can contribute to prostate discomfort. Our formula includes anti-inflammatory compounds that help reduce swelling and promote comfort.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3: Urinary Flow Enhancement</h3>
+                    <p>By supporting bladder and prostate muscle function, ProstaVive helps maintain normal urinary flow and reduces the frequency of nighttime bathroom trips.</p>
+                </div>
+            </div>
+            <p>Each ingredient in ProstaVive has been carefully selected based on scientific evidence. For example, saw palmetto extract has been studied extensively for its role in supporting prostate health. Beta-sitosterol, another key component, has shown promise in clinical trials for improving urinary symptoms associated with prostate enlargement.</p>
+            <p>Our manufacturing process ensures maximum potency and bioavailability. We use standardized extracts to guarantee consistent levels of active compounds in every capsule. This attention to quality means you can trust that ProstaVive delivers the prostate support you need.</p>
+            <p>While individual results may vary, many men report noticeable improvements in urinary function and overall prostate comfort within the first few weeks of consistent use. For optimal results, we recommend taking ProstaVive daily as part of a healthy lifestyle that includes regular exercise and a balanced diet.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Why Choose ProstaVive Over Standard Solutions?</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>ProstaVive</th>
+                        <th>Standard Solutions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clinically Studied Ingredients</td>
+                        <td>✓ Multiple peer-reviewed studies</td>
+                        <td>✗ Limited or no research</td>
+                    </tr>
+                    <tr>
+                        <td>Natural Formula</td>
+                        <td>✓ Plant-based extracts</td>
+                        <td>✗ May contain synthetic compounds</td>
+                    </tr>
+                    <tr>
+                        <td>Comprehensive Support</td>
+                        <td>✓ Addresses multiple prostate concerns</td>
+                        <td>✗ Often single-target approach</td>
+                    </tr>
+                    <tr>
+                        <td>Quality Assurance</td>
+                        <td>✓ GMP certified, third-party tested</td>
+                        <td>✗ Variable quality standards</td>
+                    </tr>
+                    <tr>
+                        <td>Money-Back Guarantee</td>
+                        <td>✓ 180-day risk-free trial</td>
+                        <td>✗ Limited or no guarantee</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Satisfaction</td>
+                        <td>✓ 4.8/5 star rating</td>
+                        <td>✗ Mixed reviews</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 40px; display: flex; justify-content: center;">
+                <img src="https://prostavive.org/home-assets/images/6-mob.png?" alt="ProstaVive multi-bottle offer" loading="lazy" style="max-width: 520px; width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Detailed Ingredient Breakdown</h2>
+            <div class="ingredients">
+                <div class="ingredient">
+                    <h3>Saw Palmetto Extract</h3>
+                    <p>Saw palmetto has been used for centuries to support prostate health. Modern research confirms its effectiveness in maintaining healthy prostate function. Clinical studies show that saw palmetto can help reduce urinary symptoms associated with prostate enlargement. It works by inhibiting the conversion of testosterone to DHT, a hormone linked to prostate issues. Our standardized extract ensures consistent potency, providing 320mg of saw palmetto per serving. This dosage aligns with research showing benefits for urinary flow and prostate comfort. Saw palmetto is well-tolerated and has a strong safety profile backed by decades of use.</p>
+                </div>
+                <div class="ingredient">
+                    <h3>Beta-Sitosterol</h3>
+                    <p>Beta-sitosterol is a plant sterol that supports prostate health and urinary function. Research published in the European Urology journal demonstrates its ability to improve urinary flow and reduce nighttime bathroom trips. It works by supporting healthy prostate cell function and reducing inflammation. Our formula includes 150mg of beta-sitosterol per capsule, the dosage used in clinical trials. This natural compound is found in foods like nuts and seeds, but supplementation ensures therapeutic levels. Beta-sitosterol is safe for long-term use and complements other prostate-supporting ingredients for comprehensive benefits.</p>
+                </div>
+                <div class="ingredient">
+                    <h3>Pygeum Africanum Bark Extract</h3>
+                    <p>Pygeum africanum is an African tree bark extract with a long history of traditional use for urinary health. Scientific studies confirm its role in supporting prostate function and reducing inflammation. Research shows pygeum can help maintain healthy prostate size and improve urinary symptoms. Our standardized extract provides 100mg of pygeum africanum per serving, containing active compounds like phytosterols and ferulic acid. This ingredient works synergistically with saw palmetto to provide comprehensive prostate support. Pygeum is well-researched and has been shown to be effective in multiple clinical trials for men's health.</p>
+                </div>
+                <div class="ingredient">
+                    <h3>Zinc (as Zinc Oxide)</h3>
+                    <p>Zinc is an essential mineral crucial for prostate health and immune function. The prostate gland contains high concentrations of zinc, and adequate levels are important for maintaining healthy prostate function. Research links zinc deficiency to prostate issues, making supplementation beneficial for men over 40. Our formula provides 15mg of zinc per capsule, supporting daily requirements without excess. Zinc also supports testosterone production and immune health. This mineral is bioavailable and well-absorbed, ensuring maximum benefit for prostate and overall health.</p>
+                </div>
+                <div class="ingredient">
+                    <h3>Lycopene</h3>
+                    <p>Lycopene is a powerful antioxidant found in tomatoes and other red fruits. Extensive research links lycopene to prostate health, with studies showing it supports healthy prostate cells and reduces oxidative stress. The Prostate Cancer Prevention Trial found that lycopene may help maintain prostate health. Our formula includes 10mg of lycopene per serving, providing antioxidant protection for prostate tissues. This natural compound works by neutralizing free radicals that can damage prostate cells. Lycopene is safe, well-tolerated, and enhances the overall effectiveness of our prostate support formula.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Comprehensive FAQ</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <h4>What is ProstaVive?</h4>
+                    <p>ProstaVive is a natural dietary supplement formulated to support prostate health and urinary function in men. It contains clinically studied ingredients like saw palmetto, beta-sitosterol, and pygeum africanum that work together to promote healthy prostate function and reduce urinary discomfort.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How does ProstaVive work?</h4>
+                    <p>ProstaVive works through multiple mechanisms: supporting healthy hormone balance, reducing inflammation in the prostate, and promoting normal urinary flow. The ingredients work synergistically to address the root causes of prostate discomfort rather than just masking symptoms.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What are the main benefits of ProstaVive?</h4>
+                    <p>Users typically experience improved urinary flow, reduced nighttime bathroom trips, decreased prostate discomfort, and enhanced overall vitality. Many men also report better sleep quality and increased confidence in their prostate health.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does it take to see results?</h4>
+                    <p>While individual results vary, most men notice improvements in urinary function within 2-4 weeks of consistent use. For optimal prostate health benefits, we recommend taking ProstaVive daily for at least 3 months to allow the ingredients to work effectively.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is the recommended dosage?</h4>
+                    <p>Take 2 capsules daily with meals, preferably one in the morning and one in the evening. This provides the therapeutic doses of each ingredient as established in clinical studies. Do not exceed the recommended dosage.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is ProstaVive safe?</h4>
+                    <p>Yes, ProstaVive is formulated with natural ingredients that have been extensively studied for safety and efficacy. It contains no synthetic hormones or prescription drugs. However, as with any supplement, consult your healthcare provider before starting, especially if you have medical conditions or take medications.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I take ProstaVive with other medications?</h4>
+                    <p>ProstaVive is generally safe to take with most medications, but we recommend consulting your doctor before combining it with prescription drugs, especially blood thinners or hormone-related medications. Our natural ingredients are well-tolerated and have minimal interaction potential.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is your return policy?</h4>
+                    <p>We offer a 180-day money-back guarantee. If you're not completely satisfied with ProstaVive for any reason, simply return the unused portion within 180 days for a full refund. This risk-free trial allows you to experience the benefits with confidence.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How is shipping handled?</h4>
+                    <p>We ship worldwide with discreet packaging. Orders are typically processed within 1-2 business days and delivered within 5-7 business days in the US. International shipping may take 7-14 days. Tracking information is provided for all orders.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Where is ProstaVive manufactured?</h4>
+                    <p>ProstaVive is proudly made in the USA in an FDA-registered facility that follows Good Manufacturing Practices (GMP). Our manufacturing process ensures the highest quality standards and product consistency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Real Customer Success Stories</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"At 55, I was getting up 3-4 times a night to use the bathroom. It was affecting my sleep and energy levels. After starting ProstaVive, I noticed improvements within two weeks. Now I sleep through the night and wake up feeling refreshed. The urinary flow is much better too. Highly recommend!"</p>
+                    <p><strong>Robert M., Age 57, Chicago, IL</strong></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"I've tried several prostate supplements over the years, but ProstaVive is the first one that actually made a difference. The constant urge to urinate and discomfort are gone. I feel more confident and energetic. The natural ingredients give me peace of mind that I'm supporting my health safely."</p>
+                    <p><strong>David L., Age 62, Houston, TX</strong></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"As someone who values natural health solutions, I was pleased to find ProstaVive. The ingredients are backed by science, and I can feel the difference. My prostate health has improved significantly, and I no longer worry about urinary issues interrupting my daily activities."</p>
+                    <p><strong>Michael S., Age 59, Phoenix, AZ</strong></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"ProstaVive has been a game-changer for my quality of life. The nighttime bathroom trips that were keeping me up are now minimal. I have more energy during the day and feel more in control of my health. Thank you for this excellent product!"</p>
+                    <p><strong>James P., Age 64, Denver, CO</strong></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"I was skeptical at first, but ProstaVive delivered results. The natural approach appealed to me, and the clinical backing gave me confidence. My urinary function has improved dramatically, and I feel more vital overall. This supplement is worth every penny."</p>
+                    <p><strong>Thomas R., Age 61, Seattle, WA</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section safety">
+        <div class="container">
+            <h2>Quality & Safety You Can Trust</h2>
+            <p>At ProstaVive, quality and safety are our top priorities. We are committed to providing you with the highest standard of natural prostate support.</p>
+            <div class="badges">
+                <div class="badge">
+                    <h3>Made in USA</h3>
+                    <p>Manufactured in FDA-registered facilities following strict quality control standards.</p>
+                </div>
+                <div class="badge">
+                    <h3>GMP Certified</h3>
+                    <p>Our production adheres to Good Manufacturing Practices for consistent quality and purity.</p>
+                </div>
+                <div class="badge">
+                    <h3>Third-Party Tested</h3>
+                    <p>Every batch is independently tested to ensure potency, purity, and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sticky-bar" id="sticky-bar">
+        <div>
+            <strong>ProstaVive</strong> - Natural Prostate Support
+        </div>
+        <div>
+            180-Day Money-Back Guarantee
+        </div>
+        <a href="https://145b3eqlvae-e21duiy6539zfk.hop.clickbank.net" class="cta-button" target="_blank" rel="noopener sponsored">Order Now</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>FDA Disclaimer:</strong> These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Always consult with a healthcare professional before starting any new supplement regimen, especially if you have existing medical conditions or are taking prescription medications. ProstaVive is a dietary supplement and should not be used as a substitute for professional medical advice, diagnosis, or treatment.</p>
+            <p>&copy; 2026 ProstaVive. All rights reserved.</p>
+            <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky bar functionality
+        window.addEventListener('scroll', function() {
+            const stickyBar = document.getElementById('sticky-bar');
+            if (window.scrollY > 500) {
+                stickyBar.classList.add('show');
+            } else {
+                stickyBar.classList.remove('show');
+            }
+        });
+
+        // FAQ toggle functionality
+        const faqItems = document.querySelectorAll('.faq-item h4');
+        faqItems.forEach(item => {
+            item.addEventListener('click', function() {
+                this.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
