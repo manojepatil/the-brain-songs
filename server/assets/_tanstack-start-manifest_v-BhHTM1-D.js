@@ -1,0 +1,4 @@
+const tsrStartManifest = () => ({ routes: { __root__: { filePath: "/home/runner/work/the-brain-songs/the-brain-songs/src/routes/__root.tsx", children: ["/", "/disclaimer", "/privacy", "/terms"], assets: void 0, preloads: ["/the-brain-songs/assets/index-CxcZGSj4.js"] }, "/disclaimer": { filePath: "/home/runner/work/the-brain-songs/the-brain-songs/src/routes/disclaimer.tsx", children: void 0, assets: void 0, preloads: ["/the-brain-songs/assets/disclaimer-Ny1VOGKX.js"] }, "/privacy": { filePath: "/home/runner/work/the-brain-songs/the-brain-songs/src/routes/privacy.tsx", children: void 0, assets: void 0, preloads: ["/the-brain-songs/assets/privacy-CtSHRQBi.js"] }, "/terms": { filePath: "/home/runner/work/the-brain-songs/the-brain-songs/src/routes/terms.tsx", children: void 0, assets: void 0, preloads: ["/the-brain-songs/assets/terms-DG_WHVFC.js"] } }, clientEntry: "/the-brain-songs/assets/index-CxcZGSj4.js" });
+export {
+  tsrStartManifest
+};
