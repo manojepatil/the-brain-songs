@@ -7,7 +7,8 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  cloudflare: false,
   vite: {
-    base: '/the-brain-songs/'  // Add this for subdirectory deployment
-  }
+    base: "/the-brain-songs/",
+  },
 });
